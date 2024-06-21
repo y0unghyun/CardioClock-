@@ -115,17 +115,17 @@ class TimerViewController: UIViewController {
     }
     
     private func showAlert() {
-        let alert = UIAlertController(title: "🚨주의🚨",
-                                      message: "루틴이 정상적이지 않습니다! \n 다시 한 번 확인해주세요.",
+        let alert = UIAlertController(title: "🚨Caution🚨",
+                                      message: "Wrong or empty input!\nCheck your input again.",
                                       preferredStyle: .alert)
-        let ok = UIAlertAction(title: "뒤로가기", style: .destructive)
+        let ok = UIAlertAction(title: "Back", style: .destructive)
         alert.addAction(ok)
         present(alert, animated: true)
     }
     
     private func finishRepetition() {
         viewModel.playSound(for: "CoachCompleteSound")
-        timerLabel.text = "세트를\n완료했습니다!"
+        timerLabel.text = "Congrats!\n"
         stopButton.isHidden = true
         viewModel.timer.invalidate()
     }
@@ -133,7 +133,7 @@ class TimerViewController: UIViewController {
     @objc private func didStopButtonTapped() {
         stateLabel.text = "🛑STOP🛑"
         viewModel.timer.invalidate()
-        timerLabel.text = "타이머가\n종료됩니다."
+        timerLabel.text = "Stop Timer"
         stopButton.isHidden = true
     }
 }

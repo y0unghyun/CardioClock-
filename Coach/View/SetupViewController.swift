@@ -17,7 +17,7 @@ class SetupViewController: UIViewController {
     
     let exerciseLabel: UILabel = {
         let label = UILabel()
-        label.text = "운동 시간 설정"
+        label.text = "WORK"
         label.font = .systemFont(ofSize: 32)
         label.textAlignment = .center
         return label
@@ -34,7 +34,7 @@ class SetupViewController: UIViewController {
     
     let breaktimeLabel: UILabel = {
         let label = UILabel()
-        label.text = "쉬는 시간 설정"
+        label.text = "REST"
         label.font = .systemFont(ofSize: 32)
         label.textAlignment = .center
         return label
@@ -51,7 +51,7 @@ class SetupViewController: UIViewController {
     
     let repetitionLabel: UILabel = {
         let label = UILabel()
-        label.text = "반복 횟수 설정"
+        label.text = "SETS"
         label.font = .systemFont(ofSize: 32)
         label.textAlignment = .center
         return label
@@ -198,8 +198,8 @@ class SetupViewController: UIViewController {
             RoutineManager.shared.sharedRoutine = Routine(exerciseTime: viewModel.exerciseTime, breakTime: viewModel.breakTime, repetition: viewModel.reps)
             present(exeView, animated: true)
         } else {
-            let alert = UIAlertController(title: "🚨주의🚨", message: "입력이 정상적이지 않습니다!\n다시 한 번 확인해주세요.", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "뒤로가기", style: .destructive)
+            let alert = UIAlertController(title: "🚨Warning🚨", message: "Invalid input.\nPlease try again", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Back", style: .destructive)
             alert.addAction(ok)
             present(alert, animated: true)
         }
