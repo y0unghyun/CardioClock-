@@ -133,7 +133,7 @@ class TimerViewController: UIViewController {
     @objc private func didStopButtonTapped() {
         stateLabel.text = "🛑STOP🛑"
         viewModel.timer.invalidate()
-        timerLabel.text = "Stop Timer"
+        timerLabel.text = "Finish!"
         stopButton.isHidden = true
     }
 }

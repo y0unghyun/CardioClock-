@@ -68,8 +68,8 @@ class SetupViewController: UIViewController {
     
     let toolbar: UIToolbar = {
         let bar = UIToolbar()
-        let cancel = UIBarButtonItem(title: "취소", style: .plain, target: self, action: #selector(cancelButtonTapped))
-        let confirm = UIBarButtonItem(title: "확인", style: .plain, target: self, action: #selector(confirmButtonTapped))
+        let cancel = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelButtonTapped))
+        let confirm = UIBarButtonItem(title: "Confirm", style: .plain, target: self, action: #selector(confirmButtonTapped))
         bar.setItems([cancel, confirm], animated: true)
         bar.isUserInteractionEnabled = true
         bar.sizeToFit()
@@ -174,20 +174,20 @@ class SetupViewController: UIViewController {
     @objc private func confirmButtonTapped() {
         if exerciseTextfield.isFirstResponder {
             if viewModel.exerciseMinutes != "0" {
-                exerciseTextfield.text = "\(viewModel.exerciseMinutes)분 \(viewModel.exerciseSeconds)초"
+                exerciseTextfield.text = "\(viewModel.exerciseMinutes)min \(viewModel.exerciseSeconds)sec"
             } else {
-                exerciseTextfield.text = "\(viewModel.exerciseSeconds)초"
+                exerciseTextfield.text = "\(viewModel.exerciseSeconds)sec"
             }
             exerciseTextfield.resignFirstResponder()
         } else if breaktimeTextfield.isFirstResponder {
             if viewModel.breaktimeMinutes != "0" {
-                breaktimeTextfield.text = "\(viewModel.breaktimeMinutes)분 \(viewModel.breaktimeSeconds)초"
+                breaktimeTextfield.text = "\(viewModel.breaktimeMinutes)min \(viewModel.breaktimeSeconds)sec"
             } else {
-                breaktimeTextfield.text = "\(viewModel.breaktimeSeconds)초"
+                breaktimeTextfield.text = "\(viewModel.breaktimeSeconds)sec"
             }
             breaktimeTextfield.resignFirstResponder()
         } else if repetitionTextfield.isFirstResponder {
-            repetitionTextfield.text = "\(viewModel.repetitionTimes)회"
+            repetitionTextfield.text = "\(viewModel.repetitionTimes)"
             repetitionTextfield.resignFirstResponder()
         }
     }
@@ -253,9 +253,9 @@ extension SetupViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 1, 2:
-            return component == 0 ? "\(viewModel.minutes[row])분" : "\(viewModel.seconds[row])초"
+            return component == 0 ? "\(viewModel.minutes[row])" : "\(viewModel.seconds[row])"
         case 3:
-            return "\(viewModel.repetition[row])회"
+            return "\(viewModel.repetition[row])"
         default:
             return ""
         }

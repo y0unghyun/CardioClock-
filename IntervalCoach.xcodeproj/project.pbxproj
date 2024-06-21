@@ -54,7 +54,7 @@
 		1499AC902C212EA100800D55 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		1499AC942C2146A600800D55 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1499AC962C218F4900800D55 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
-		14C767AF2C1AD48A00E59531 /* Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C767AF2C1AD48A00E59531 /* IntervalCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C767B22C1AD48A00E59531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C767B42C1AD48A00E59531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		14C767BC2C1AD48B00E59531 /* Coach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coach.xcdatamodel; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		14C767B02C1AD48A00E59531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14C767AF2C1AD48A00E59531 /* Coach.app */,
+				14C767AF2C1AD48A00E59531 /* IntervalCoach.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14C767AE2C1AD48A00E59531 /* Coach */ = {
+		14C767AE2C1AD48A00E59531 /* IntervalCoach */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "Coach" */;
+			buildConfigurationList = 14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "IntervalCoach" */;
 			buildPhases = (
 				14C767AB2C1AD48A00E59531 /* Sources */,
 				14C767AC2C1AD48A00E59531 /* Frameworks */,
@@ -174,12 +174,12 @@
 			);
 			dependencies = (
 			);
-			name = Coach;
+			name = IntervalCoach;
 			packageProductDependencies = (
 				14253F602C230EF20085FAE6 /* SnapKit */,
 			);
 			productName = Coach;
-			productReference = 14C767AF2C1AD48A00E59531 /* Coach.app */;
+			productReference = 14C767AF2C1AD48A00E59531 /* IntervalCoach.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "Coach" */;
+			buildConfigurationList = 14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "IntervalCoach" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14C767AE2C1AD48A00E59531 /* Coach */,
+				14C767AE2C1AD48A00E59531 /* IntervalCoach */,
 			);
 		};
 /* End PBXProject section */
@@ -446,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "Coach" */ = {
+		14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "IntervalCoach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C767C42C1AD48D00E59531 /* Debug */,
@@ -455,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "Coach" */ = {
+		14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "IntervalCoach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C767C72C1AD48D00E59531 /* Debug */,

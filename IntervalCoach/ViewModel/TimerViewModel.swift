@@ -43,7 +43,7 @@ class TimerViewModel {
                 let remainSec = remainTime % 60
                 
                 if remainTime <= 3 && remainTime >= 1 {
-                    DispatchQueue.global().async {
+                    DispatchQueue.global(qos: .userInteractive).async {
                         self.playSound?("CoachReadySound")
                     }
                 }
