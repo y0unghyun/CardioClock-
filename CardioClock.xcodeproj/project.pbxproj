@@ -22,7 +22,7 @@
 		1499AC972C218F4900800D55 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499AC962C218F4900800D55 /* TimerState.swift */; };
 		14C767B32C1AD48A00E59531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C767B22C1AD48A00E59531 /* AppDelegate.swift */; };
 		14C767B52C1AD48A00E59531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C767B42C1AD48A00E59531 /* SceneDelegate.swift */; };
-		14C767BD2C1AD48B00E59531 /* Coach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C767BB2C1AD48B00E59531 /* Coach.xcdatamodeld */; };
+		14C767BD2C1AD48B00E59531 /* IntervalCoach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C767BB2C1AD48B00E59531 /* IntervalCoach.xcdatamodeld */; };
 		14C767BF2C1AD48D00E59531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C767BE2C1AD48D00E59531 /* Assets.xcassets */; };
 		14C767C22C1AD48D00E59531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C767C02C1AD48D00E59531 /* LaunchScreen.storyboard */; };
 		14C767CC2C1AD6C900E59531 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C767CB2C1AD6C900E59531 /* SetupViewController.swift */; };
@@ -54,7 +54,7 @@
 		1499AC902C212EA100800D55 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		1499AC942C2146A600800D55 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1499AC962C218F4900800D55 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
-		14C767AF2C1AD48A00E59531 /* IntervalCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C767AF2C1AD48A00E59531 /* CardioClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C767B22C1AD48A00E59531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C767B42C1AD48A00E59531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		14C767BC2C1AD48B00E59531 /* Coach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coach.xcdatamodel; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		14C767A62C1AD48A00E59531 = {
 			isa = PBXGroup;
 			children = (
-				14C767B12C1AD48A00E59531 /* Coach */,
+				14C767B12C1AD48A00E59531 /* CardioClock */,
 				14C767B02C1AD48A00E59531 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,12 +135,12 @@
 		14C767B02C1AD48A00E59531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14C767AF2C1AD48A00E59531 /* IntervalCoach.app */,
+				14C767AF2C1AD48A00E59531 /* CardioClock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14C767B12C1AD48A00E59531 /* Coach */ = {
+		14C767B12C1AD48A00E59531 /* CardioClock */ = {
 			isa = PBXGroup;
 			children = (
 				14573BAB2C2395C80029A929 /* Extensions */,
@@ -153,17 +153,17 @@
 				14C767BE2C1AD48D00E59531 /* Assets.xcassets */,
 				14C767C02C1AD48D00E59531 /* LaunchScreen.storyboard */,
 				14C767C32C1AD48D00E59531 /* Info.plist */,
-				14C767BB2C1AD48B00E59531 /* Coach.xcdatamodeld */,
+				14C767BB2C1AD48B00E59531 /* IntervalCoach.xcdatamodeld */,
 			);
-			path = Coach;
+			path = CardioClock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14C767AE2C1AD48A00E59531 /* IntervalCoach */ = {
+		14C767AE2C1AD48A00E59531 /* CardioClock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "IntervalCoach" */;
+			buildConfigurationList = 14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "CardioClock" */;
 			buildPhases = (
 				14C767AB2C1AD48A00E59531 /* Sources */,
 				14C767AC2C1AD48A00E59531 /* Frameworks */,
@@ -174,12 +174,12 @@
 			);
 			dependencies = (
 			);
-			name = IntervalCoach;
+			name = CardioClock;
 			packageProductDependencies = (
 				14253F602C230EF20085FAE6 /* SnapKit */,
 			);
 			productName = Coach;
-			productReference = 14C767AF2C1AD48A00E59531 /* IntervalCoach.app */;
+			productReference = 14C767AF2C1AD48A00E59531 /* CardioClock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "IntervalCoach" */;
+			buildConfigurationList = 14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "CardioClock" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14C767AE2C1AD48A00E59531 /* IntervalCoach */,
+				14C767AE2C1AD48A00E59531 /* CardioClock */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +245,7 @@
 				14573BAF2C23D3480029A929 /* TimerViewModel.swift in Sources */,
 				1499AC912C212EA100800D55 /* UIDevice+Extension.swift in Sources */,
 				14573BAD2C2399190029A929 /* SetupViewModel.swift in Sources */,
-				14C767BD2C1AD48B00E59531 /* Coach.xcdatamodeld in Sources */,
+				14C767BD2C1AD48B00E59531 /* IntervalCoach.xcdatamodeld in Sources */,
 				1499AC972C218F4900800D55 /* TimerState.swift in Sources */,
 				14C767B32C1AD48A00E59531 /* AppDelegate.swift in Sources */,
 				14C767B52C1AD48A00E59531 /* SceneDelegate.swift in Sources */,
@@ -396,18 +396,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77S5ZSPZ66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Coach/Info.plist;
+				INFOPLIST_FILE = CardioClock/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyhyun.Coach;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyhyun.CardioClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,18 +425,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77S5ZSPZ66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Coach/Info.plist;
+				INFOPLIST_FILE = CardioClock/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyhyun.Coach;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyhyun.CardioClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "IntervalCoach" */ = {
+		14C767AA2C1AD48A00E59531 /* Build configuration list for PBXProject "CardioClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C767C42C1AD48D00E59531 /* Debug */,
@@ -455,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "IntervalCoach" */ = {
+		14C767C62C1AD48D00E59531 /* Build configuration list for PBXNativeTarget "CardioClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C767C72C1AD48D00E59531 /* Debug */,
@@ -486,13 +488,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		14C767BB2C1AD48B00E59531 /* Coach.xcdatamodeld */ = {
+		14C767BB2C1AD48B00E59531 /* IntervalCoach.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				14C767BC2C1AD48B00E59531 /* Coach.xcdatamodel */,
 			);
 			currentVersion = 14C767BC2C1AD48B00E59531 /* Coach.xcdatamodel */;
-			path = Coach.xcdatamodeld;
+			path = IntervalCoach.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
