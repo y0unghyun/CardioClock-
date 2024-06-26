@@ -7,4 +7,9 @@
 
 ### Contact me
 If you have any questions or suggestions, please contact us at the email address below!
+
 dl3rpika@gmail.com
+
+## Privacy Policy
+
+This application does not collect any personal information.
