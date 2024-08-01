@@ -2,6 +2,9 @@
 
 ## Super simple Interval-timer for your super-healthy life
 ### Download
+
+App Store에서 다운로드 할 수 있습니다! 
+
 https://apps.apple.com/kr/app/cardioclock/id6504685292
 
 ![CardioClockDownload](https://github.com/user-attachments/assets/316d411b-fee8-4c96-8be3-c60dc4cf49f2)
